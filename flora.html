@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Flora Fauna Endemik Indonesia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/cendrawasih.png" rel="icon">
+  <link href="assets/img/cendrawasih.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1>Flora Fauna Endemik Indonesia</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Gallery</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="flora.html">Flora</a></li>
+              <li><a href="fauna.html">Fauna</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Flora</h2>
+            <p>Flora endemik Indonesia merujuk pada spesies tumbuhan yang hanya tumbuh di wilayah Indonesia dan tidak
+              ditemukan di tempat lain di dunia. Indonesia memiliki beragam flora endemik yang menakjubkan, terutama
+              karena keanekaragaman geografis dan iklim yang berbeda-beda di seluruh kepulauan</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+        <div class="row gy-4 justify-content-center" id="galleryItemsFlora">
+          <!-- Gallery items will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Flora Fauna Endemik Indonesia</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <audio id="music" src="assets/music/bg-music.mp3" loop></audio>
+  <div class="play-button" id="playButton">
+    <i id="iconButtonMusic" class="bi bi-play"></i>
+    <!-- Add the appropriate icon class here, such as Font Awesome or any other icon library -->
+  </div>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    var listDataFlora = [
+      {
+        name: "Anggrek Bulan",
+        img: [
+          "assets/img/gallery/flora/anggrek-bulan-1.jpg",
+          "assets/img/gallery/flora/anggrek-bulan-2.jpg",
+          "assets/img/gallery/flora/anggrek-bulan-3.jpg",
+          "assets/img/gallery/flora/anggrek-bulan-4.jpg",
+        ],
+        latin_name: "Phalaenopsis amabilis",
+        status: "Tidak Langka",
+        origin: "Indonesia",
+        video_id: "r0oJLgZflQ4",
+        description: `
+    <p>
+      Anggrek Bulan (Phalaenopsis amabilis) adalah salah satu spesies anggrek yang terkenal karena keindahan dan popularitasnya. Anggrek ini dikenal dengan nama "Anggrek Bulan" karena keindahan bunganya yang menyerupai bentuk bulan. Bunga anggrek bulan memiliki kelopak yang lebar, sering kali berwarna putih atau krem dengan corak atau bintik-bintik pada bagian tengahnya.
+    </p>
+    <p>
+      Anggrek Bulan berasal dari wilayah Asia Tenggara, khususnya ditemukan di negara-negara seperti Indonesia, Malaysia, Filipina, dan Thailand. Anggrek ini merupakan anggrek asli Indonesia dan menjadi anggrek nasional Indonesia
+    </p>
+    <p>
+      Anggrek Bulan umumnya tumbuh di habitat alami yang lembap seperti hutan hujan tropis. Mereka biasanya ditemukan di pohon-pohon besar atau di sekitar daerah dengan kelembaban tinggi. Anggrek ini merupakan anggrek epifit, yang berarti mereka tumbuh menempel pada batang atau cabang pohon, namun tidak merusak inangnya karena mereka mendapatkan nutrisi dari udara, hujan, dan bahan organik yang terakumulasi di sekitar mereka
+    </p>
+    <p>
+      Anggrek Bulan dinamakan demikian karena bunga-bunga yang indah dan harum mekar pada waktu malam, memberikan kesan yang menyerupai bulan yang bersinar di malam hari.
+    </p>
+  `
+      },
+      {
+        name: " Padma Raksasa",
+        img: [
+          "assets/img/gallery/flora/rafflesia-1.jpg",
+          "assets/img/gallery/flora/rafflesia-2.jpg",
+          "assets/img/gallery/flora/rafflesia-3.jpg",
+          "assets/img/gallery/flora/rafflesia-4.jpg",
+          "assets/img/gallery/flora/rafflesia-5.jpg"
+        ],
+        latin_name: "Rafflesia Arnoldii",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "0cGRujABwuQ",
+        description: `
+    <p>
+      Rafflesia arnoldii adalah sebuah tumbuhan parasit yang terkenal karena memiliki bunga terbesar di dunia. Tumbuhan ini tidak memiliki akar, batang, atau daun, sehingga tergolong ke dalam kelompok tumbuhan parasit. Rafflesia arnoldii tumbuh di tanah dan tergantung pada tumbuhan inangnya, yaitu pohon-pohon dari genus Tetrastigma. Bunganya memiliki ukuran yang sangat besar, bisa mencapai diameter hingga 1 meter dan beratnya bisa mencapai 10 kilogram. Bunga ini juga dikenal karena aroma busuk yang kuat yang menyerupai bau bangkai.
+    </p>
+    <p>
+      Rafflesia arnoldii berasal dari wilayah hutan hujan tropis di Sumatera, Indonesia, khususnya di daerah-daerah seperti Bengkulu, Jambi, dan Sumatera Barat. Tumbuhan ini juga dapat ditemukan di negara-negara tetangga seperti Malaysia dan Thailand.
+    </p>
+    <p>
+      Rafflesia arnoldii tumbuh di dalam hutan hujan tropis yang lembab dan gelap. Mereka biasanya ditemukan di daerah yang rendah dan datar, di dekat sungai atau tepi jalan setapak di hutan. Tumbuhan ini memiliki kebutuhan khusus terhadap lingkungannya, termasuk suhu yang konstan dan kelembaban yang tinggi
+    </p>
+  `
+      },
+      {
+        name: " anggrek hitam",
+        img: [
+          "assets/img/gallery/flora/anggrek-hitam-1.jpg",
+          "assets/img/gallery/flora/anggrek-hitam-2.jpg",
+          "assets/img/gallery/flora/anggrek-hitam-3.jpg",
+          "assets/img/gallery/flora/anggrek-hitam-4.jpg"
+        ],
+        latin_name: " Coelogyne pandurata, Dracula vampira, dan Trichoglottis brachiata.",
+        status: "Langka",
+        origin: "hutan tropis,Indonesia",
+        video_id: "_2p_POj4Aag",
+        description: `
+    <p>
+      Anggrek Hitam adalah istilah umum yang digunakan untuk menggambarkan anggrek dengan bunga berwarna hitam atau mendekati hitam. Meskipun disebut "anggrek hitam," sebagian besar anggrek yang dikategorikan seperti itu sebenarnya memiliki warna bunga yang sangat gelap, seperti ungu tua, merah gelap, atau cokelat gelap.
+    </p>
+    <p>
+      Anggrek Hitam yang sejati, dengan bunga yang benar-benar hitam, sangat langka di alam. Namun, popularitasnya sebagai tanaman hias telah menyebabkan perkembangan varietas dan kultivar dengan warna bunga yang mendekati hitam, yang menarik perhatian para kolektor dan pecinta anggrek.
+    </p>
+    <p>
+      Karena keindahan dan ketenarannya, Anggrek Hitam sering kali menjadi objek pengumpulan dan perdagangan ilegal. Konservasi dan perlindungan habitat alam menjadi penting untuk memastikan kelangsungan spesies anggrek dan untuk mencegah penipisan populasi yang terlalu berlebihan karena perburuan ilegal.
+    </p>
+  `
+      },
+      {
+        name: " Pohon Meranti",
+        img: [
+          "assets/img/gallery/flora/meranti-1.jpg",
+          "assets/img/gallery/flora/meranti-2.jpg",
+          "assets/img/gallery/flora/meranti-3.jpg",
+          "assets/img/gallery/flora/meranti-4.jpg"
+        ],
+        latin_name: "genus Shorea,Shorea leprosula, Shorea platyclados, dan Shorea parvifolia.",
+        status: "kelangkaan bergantung dari jenisnya",
+        origin: "Indonesia,Asia Tenggara",
+        video_id: "FqY7rYDJqm0",
+        description: `
+    <p>
+      Pohon Meranti merujuk pada sekelompok spesies pohon dalam genus Shorea yang termasuk dalam keluarga Dipterocarpaceae. Pohon-pohon ini terkenal karena ukuran dan kegunaan kayunya yang berharga, serta pentingnya dalam ekosistem hutan hujan tropis. Meranti adalah salah satu kelompok pohon yang dominan dan penting di kawasan Asia Tenggara.
+    </p>
+    <p>
+      Selain itu, kayu Meranti digunakan dalam berbagai industri, termasuk pembuatan furnitur, konstruksi, dan berbagai produk kayu lainnya. Sayangnya, karena eksploitasi berlebihan dan deforestasi, beberapa spesies pohon Meranti saat ini menghadapi status kelangkaan dan terancam punah.
+    </p>
+    <p>
+      Upaya konservasi dan pengelolaan hutan yang berkelanjutan sangat penting untuk memastikan kelangsungan pohon Meranti dan menjaga ekosistem hutan tropis yang penting bagi kehidupan manusia dan lingkungan secara keseluruhan.
+    </p>
+  `
+      },
+      {
+        name: "  Matoa",
+        img: [
+          "assets/img/gallery/flora/matoa-1.jpg",
+          "assets/img/gallery/flora/matoa-2.jpg",
+          "assets/img/gallery/flora/matoa-3.jpg",
+        ],
+        latin_name: "Pometia pinnata",
+        status: "tidak terlalu Langka",
+        origin: "Kalimantan,Sulawesi,Indonesia",
+        video_id: "OxCL64VGlDs",
+        description: `
+    <p>
+      Matoa adalah sejenis pohon dan juga merujuk pada buah yang dihasilkan oleh pohon tersebut. Matoa memiliki keunikan dalam tekstur daging buah yang kenyal dan rasanya yang manis. Buah ini populer di Indonesia dan biasanya dikonsumsi segar atau dijadikan bahan dalam makanan dan minuman.
+    </p>
+    <p>
+      Buah matoa biasanya dikonsumsi segar karena rasanya yang manis dan segar. Selain itu, buah ini juga sering digunakan sebagai bahan dalam makanan dan minuman, seperti es buah, campuran jus, dan berbagai hidangan penutup. Beberapa orang juga mengeringkan buah matoa untuk dijadikan manisan.
+    </p>
+    <p>
+      Pohon matoa tumbuh subur di habitat alami hutan tropis yang lembap dan kaya akan nutrisi. Mereka dapat ditemukan di dataran rendah hingga ketinggian sekitar 1.500 meter di atas permukaan laut. Matoa tumbuh baik di tanah yang subur dan memiliki kelembaban yang cukup.
+    </p>
+  `
+      },
+      {
+        name: " Nyamplung",
+        img: [
+          "assets/img/gallery/flora/nyamplung-1.jpg",
+          "assets/img/gallery/flora/nyamplung-2.jpg",
+          "assets/img/gallery/flora/nyamplung-3.jpg"
+        ],
+        latin_name: "Calophyllum inophyllum",
+        status: "tidak langka",
+        origin: "wilayah samudra Hindia, termasuk Idonesia",
+        video_id: "isM-gvVKhzM",
+        description: `
+    <p>
+      Nyamplung (Calophyllum inophyllum) adalah sejenis pohon yang termasuk dalam keluarga Guttiferae. Pohon ini memiliki banyak manfaat dan sering ditemukan di wilayah tropis dan subtropis di berbagai negara seperti Indonesia, India, Australia, dan beberapa negara di kawasan Pasifik.
+    </p>
+    <p>
+      Nyamplung memiliki bentuk pohon yang tegak dengan tinggi mencapai 10-25 meter. Pohon ini biasanya memiliki cabang yang lebar dengan daun yang berwarna hijau mengilap dan berbentuk lonjong atau bulat telur.Bunga Nyamplung berukuran kecil dengan warna putih hingga kuning pucat. Bunganya berbau harum dan biasanya terbentuk dalam kelompok atau tandan.Buah Nyamplung berbentuk bulat hingga lonjong dengan diameter sekitar 2-3 cm. Buah ini mengandung satu biji yang mengandung minyak berwarna kuning.
+    </p>
+    <p>
+      Nyamplung memiliki banyak manfaat bagi manusia dan lingkungan. Minyak biji buahnya memiliki berbagai kegunaan, seperti digunakan dalam industri kosmetik, sebagai minyak kulit, dan juga sebagai bahan bakar untuk penerangan tradisional. Selain itu, minyak nyamplung juga memiliki sifat antimikroba dan antiinflamasi yang membantu dalam pengobatan tradisional.
+    </p>
+  `
+      },
+      {
+        name: " Titan Arum",
+        img: [
+          "assets/img/gallery/flora/titan-arum-4.jpg",
+          "assets/img/gallery/flora/titan-arum-2.jpg",
+          "assets/img/gallery/flora/titan-arum-3.jpg",
+          "assets/img/gallery/flora/titan-arum-1.jpg",
+        ],
+        latin_name: "Amorphophallus titanum",
+        status: "Langka",
+        origin: "Sumatera,Indonesia",
+        video_id: "B_v2ffpNSpE",
+        description: `
+    <p>
+      Titan Arum (Amorphophallus titanum) adalah sebuah tumbuhan langka yang terkenal karena bunganya yang sangat besar dan berbau busuk. Tumbuhan ini juga dikenal sebagai "bunga bangkai" karena aroma kuat yang menyerupai bau bangkai saat mekar. Titan Arum memiliki infloresensi tunggal yang dapat mencapai ketinggian 2-3 meter, menjadikannya sebagai salah satu bunga terbesar di dunia. Periode mekarnya hanya berlangsung selama beberapa hari.
+    </p>
+    <p>
+      Periode mekarnya yang singkat dan bau yang khas membuat Titan Arum menjadi fenomena menarik di dunia botani dan menarik minat banyak orang untuk melihat dan mengagumi keindahan dan keunikan tumbuhan langka ini saat bunganya mekar.
+    </p>
+  `
+      },
+      {
+        name: " Kantong Semar",
+        img: [
+          "assets/img/gallery/flora/nepenthes-rajah-4.jpg",
+          "assets/img/gallery/flora/nepenthes-rajah-2.jpg",
+          "assets/img/gallery/flora/nepenthes-rajah-3.jpg"
+        ],
+        latin_name: "Nepenthes rajah",
+        status: "Langka",
+        origin: "pegunungan Borneo",
+        video_id: "ZVOn_7GcnhM",
+        description: `
+    <p>
+      Nepenthes rajah adalah salah satu spesies kantong semar (pitcher plant) yang sangat menarik. Tumbuhan ini terkenal karena kantongnya yang besar dan bentuk yang unik. Kantong semar adalah jenis tumbuhan karnivora yang memiliki daun berbentuk seperti corong yang berfungsi untuk menangkap dan mencerna serangga.
+    </p>
+    <p>
+      Nepenthes rajah memiliki kantong atau daun jebakan yang sangat besar dan unik. Kantongnya dapat mencapai ukuran sekitar 30 cm dan berbentuk seperti corong atau mangkuk dengan penutup yang melengkung dan tajam.Kantong semar pada Nepenthes rajah berfungsi sebagai perangkap untuk menangkap serangga dan hewan kecil lainnya. Di bagian dalam kantong terdapat cairan pencernaan yang mengandung enzim untuk mencerna mangsa yang terperangkap.
+    </p>
+    <p>
+      Ketika Nepenthes rajah mekar dan menghasilkan kantong-kantongnya yang besar dan mencolok, tumbuhan ini menjadi daya tarik bagi para peneliti, pecinta alam, dan pengunjung kebun botani. Meskipun tumbuhan ini menarik, perlu diingat bahwa mereka dilindungi dan harus dipelihara dan dijaga dengan hati-hati untuk menjaga kelestariannya di alam liar.
+    </p>
+  `
+      },
+    ];
+
+
+    var galleryItemsContainer = document.getElementById("galleryItemsFlora");
+
+    for (var i = 0; i < listDataFlora.length; i++) {
+      var data = listDataFlora[i];
+
+      var colDiv = document.createElement("div");
+      colDiv.className = "col-xl-3 col-lg-4 col-md-6";
+
+      var galleryItemDiv = document.createElement("div");
+      galleryItemDiv.className = "gallery-item h-100";
+
+      var imgElement = document.createElement("img");
+      imgElement.className = "img-fluid";
+      imgElement.alt = "";
+      imgElement.src = data["img"][0];
+      var jsonString = JSON.stringify(data);
+
+      var galleryLinksDiv = document.createElement("div");
+      galleryLinksDiv.className =
+        "gallery-links d-flex align-items-center justify-content-center";
+
+      var previewLinkA = document.createElement("a");
+      previewLinkA.href = data["img"][0];
+      previewLinkA.title = data["name"];
+      previewLinkA.className = "glightbox preview-link";
+      previewLinkA.innerHTML = '<i class="bi bi-arrows-angle-expand"></i>';
+
+      var detailsLinkA = document.createElement("a");
+      detailsLinkA.href =
+        "gallery-single.html?data=" + encodeURIComponent(jsonString);
+      detailsLinkA.className = "details-link";
+      detailsLinkA.innerHTML = '<i class="bi bi-link-45deg"></i>';
+
+      galleryLinksDiv.appendChild(previewLinkA);
+      galleryLinksDiv.appendChild(detailsLinkA);
+
+      galleryItemDiv.appendChild(imgElement);
+      galleryItemDiv.appendChild(galleryLinksDiv);
+
+      colDiv.appendChild(galleryItemDiv);
+
+      galleryItemsContainer.appendChild(colDiv);
+    }
+
+  </script>
+
+</body>
+
+</html>

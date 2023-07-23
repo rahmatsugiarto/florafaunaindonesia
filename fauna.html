@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Flora Fauna Endemik Indonesia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/cendrawasih.png" rel="icon">
+  <link href="assets/img/cendrawasih.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <i class="bi bi-camera"></i>
+        <h1>Flora Fauna Endemik Indonesia</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Gallery</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="flora.html">Flora</a></li>
+              <li><a href="fauna.html">Fauna</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Fauna</h2>
+            <p>Fauna endemik Indonesia mengacu pada spesies hewan yang hanya ditemukan di wilayah Indonesia dan tidak
+              ada di tempat lain di dunia. Indonesia memiliki banyak spesies hewan endemik yang unik dan menarik.
+              Keanekaragaman geografis dan ekosistem yang luas memberikan peluang bagi evolusi dan perkembangan spesies
+              yang khas.</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+        <div class="row gy-4 justify-content-center" id="galleryItemsFauna">
+          <!-- Gallery items will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Flora Fauna Endemik Indonesia</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <audio id="music" src="assets/music/bg-music.mp3" loop></audio>
+  <div class="play-button" id="playButton">
+    <i id="iconButtonMusic" class="bi bi-play"></i>
+    <!-- Add the appropriate icon class here, such as Font Awesome or any other icon library -->
+  </div>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+
+    var listDataFauna = [
+      {
+        name: "Orang Utan",
+        img: [
+          "assets/img/gallery/fauna/orang-hutan-1.jpg",
+          "assets/img/gallery/fauna/orang-hutan-2.jpg",
+          "assets/img/gallery/fauna/orang-hutan-3.jpg",
+        ],
+        latin_name: "Pongo",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "U0xmRVgAtZY",
+        description: `
+        <p>
+          Orangutan adalah salah satu spesies kera besar yang hidup di hutan-hutan tropis di Borneo dan Sumatra. Mereka dikenal karena kecerdasan mereka dan kemampuan mereka dalam menggunakan alat-alat sederhana. Nama "orangutan" berasal dari bahasa Melayu, yang secara harfiah berarti "manusia hutan."
+        </p>
+        <p>
+  	      Orangutan memiliki tubuh yang besar dengan lengan yang panjang dan kuat, yang memungkinkan mereka untuk berayun dari cabang ke cabang dengan mudah di antara pohon-pohon di hutan. Mereka biasanya memakan buah-buahan, daun, bunga, kulit kayu, dan serangga. Orangutan juga dianggap sebagai salah satu hewan primata yang paling mirip dengan manusia, dengan genetika dan perilaku yang sangat mirip.
+        </p>
+        <p>
+          Sayangnya, populasi orangutan terancam punah karena hilangnya habitat mereka akibat pembukaan lahan untuk perkebunan kelapa sawit, pertambangan, dan kegiatan manusia lainnya. Perburuan ilegal juga menjadi ancaman serius bagi orangutan, karena mereka sering diburu untuk diperdagangkan sebagai hewan peliharaan atau untuk diambil bagian-bagiannya yang bernilai.
+        </p>
+        <p>
+          Banyak upaya dilakukan untuk melindungi orangutan dan habitatnya. Organisasi konservasi dan pemerintah bekerja sama untuk mendirikan taman nasional dan kawasan lindung di Borneo dan Sumatra, serta untuk menghentikan perdagangan ilegal orangutan dan mengedukasi masyarakat tentang pentingnya pelestarian spesies ini.
+        </p>
+        <p>
+          Orangutan adalah spesies yang dilindungi dan penting untuk ekosistem hutan. Upaya konservasi yang berkelanjutan sangat penting untuk memastikan kelangsungan hidup mereka dan melindungi warisan alam yang berharga ini untuk generasi mendatang.
+        </p>
+        `
+      },
+      {
+        name: " Komodo",
+        img: [
+          "assets/img/gallery/fauna/komodo-1.jpg",
+          "assets/img/gallery/fauna/komodo-2.jpg",
+          "assets/img/gallery/fauna/komodo-3.jpg",
+        ],
+        latin_name: "Varanus komodoensis",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "semBI5PrVpU",
+        description: `
+        <p>
+          Komodo, atau lebih dikenal sebagai komodo dragon, adalah jenis kadal besar yang ditemukan di beberapa pulau di Indonesia, terutama di Pulau Komodo, Rinca, Flores, Gili Motang, dan Gili Dasami. Komodo merupakan salah satu hewan purba yang masih hidup dan dikenal sebagai kadal terbesar di dunia.
+        </p>
+        <p>
+          Komodo memiliki ukuran tubuh yang besar dan kuat, dengan panjang rata-rata antara 2 hingga 3 meter dan berat mencapai 70-90 kilogram. Mereka memiliki ciri khas seperti kulit bersisik kasar, ekor panjang, kepala besar dengan mulut yang kuat, dan gigi-gigi tajam yang digunakan untuk merobek mangsa.
+        </p>
+        <p>
+          Makanan utama komodo adalah daging, dan mereka terkenal sebagai predator yang tangguh. Mereka memburu berbagai hewan, termasuk rusa, babi hutan, monyet, dan burung. Komodo juga memiliki kelenjar yang menghasilkan saliva beracun yang digunakan untuk melumpuhkan mangsa mereka. Setelah mangsa terluka, komodo akan mengikuti jejak darah dan menunggu mangsa melemah sebelum akhirnya memangsa mereka.
+        </P>
+        <p>
+          Komodo juga dikenal dengan reputasinya yang ganas dan potensial mematikan. Gigitan komodo dapat menyebabkan infeksi parah dan keracunan darah karena bakteri yang ada di dalam mulut mereka. Meskipun komodo merupakan hewan yang berbahaya, mereka juga dilindungi karena status mereka sebagai spesies yang terancam punah.
+        </p>
+        <p>
+          Pulau Komodo dan sekitarnya telah ditetapkan sebagai Taman Nasional Komodo, yang merupakan salah satu warisan dunia UNESCO. Taman nasional ini memberikan perlindungan bagi komodo dan habitatnya, sambil mempromosikan kelestarian lingkungan dan ekosistem yang unik di pulau-pulau tersebut.
+        </p>
+        `
+      },
+      {
+        name: "Ular Sanca Hijau",
+        img: [
+          "assets/img/gallery/fauna/ular-sanca-hijau-1.jpg",
+          "assets/img/gallery/fauna/ular-sanca-hijau-2.jpg",
+          "assets/img/gallery/fauna/ular-sanca-hijau-3.jpg",
+        ],
+        latin_name: "Morelia viridis",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "kFP0_uy8fhA",
+        description: `
+        <p>
+          Ular sanca hijau memiliki penampilan yang mirip dengan ular sanca pohon lainnya, dengan tubuh yang besar, ramping, dan pola kulit yang khas berupa garis-garis dan bercak-bercak yang menarik. Namun, ular sanca hijau memiliki warna yang lebih dominan berupa nuansa hijau atau kekuningan, yang merupakan adaptasi untuk lingkungan hidup di Pulau Papua.
+        </p>
+        <p>
+          Seperti ular sanca pohon lainnya, ular sanca hijau juga merupakan pemangsa yang tangguh, memangsa mamalia, burung, dan reptil. Mereka menggunakan strategi membelit dan mencekik untuk menaklukkan mangsa mereka.
+        </p>
+        <p>
+          Ular sanca hijau, seperti ular sanca pohon lainnya, merupakan hewan yang dilindungi dan dilindungi oleh hukum. Upaya konservasi dan perlindungan habitat alami mereka sangat penting untuk memastikan kelangsungan hidup populasi ular sanca hijau dan menjaga keanekaragaman hayati di Pulau Papua.
+        </p>
+        `
+      },
+      {
+        name: "Tarsius",
+        img: [
+          "assets/img/gallery/fauna/tarsius-3.jpg",
+          "assets/img/gallery/fauna/tarsius-2.jpg",
+          "assets/img/gallery/fauna/tarsius-1.jpg",
+        ],
+        latin_name: "Tarsius Sulawesi",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "vcZYNQDeO9Y",
+        description: `
+        <p>
+          Tarsius Sulawesi, atau tarsius sulawesiensis, adalah salah satu spesies tarsius yang ditemukan di pulau Sulawesi, Indonesia. Tarsius Sulawesi merupakan spesies tarsius yang endemik, artinya mereka hanya ditemukan di wilayah tertentu, yaitu di beberapa pulau di Sulawesi.
+        </p>
+        <p>
+          Tarsius Sulawesi memiliki ukuran tubuh yang kecil dengan panjang tubuh antara 10 hingga 15 cm, dan ekor sepanjang tubuh. Mereka memiliki mata yang sangat besar dan tajam, yang memberikan mereka penglihatan yang luar biasa baik, terutama di kegelapan. Tarsius Sulawesi juga memiliki ciri khas seperti telinga yang besar dan bulu yang lembut dan berwarna coklat atau abu-abu.
+        </p>
+        <p>
+          Mereka adalah hewan nokturnal, yang berarti aktif pada malam hari dan tidur di siang hari. Tarsius Sulawesi memangsa serangga, seperti jangkrik, belalang, dan kupu-kupu, serta beberapa hewan kecil lainnya.
+        </p>
+        <p>
+          Tarsius Sulawesi tinggal di hutan-hutan tropis di pulau Sulawesi, terutama di daerah dataran rendah dan pegunungan. Mereka lebih sering ditemukan di wilayah yang lebat pohon dan vegetasi yang tinggi.
+        </p>
+        <p>
+          Sayangnya, populasi tarsius sulawesi terancam oleh hilangnya habitat akibat deforestasi dan perambahan hutan. Upaya konservasi dilakukan untuk melindungi tarsius sulawesi dan habitatnya, termasuk pendirian taman nasional dan kawasan lindung serta upaya edukasi dan kesadaran publik tentang pentingnya menjaga keberlanjutan keanekaragaman hayati di pulau Sulawesi.
+        </p>
+        `
+      },
+      {
+        name: "Burung Cendrawasih",
+        img: [
+          "assets/img/gallery/fauna/burung-cendrawasih-2.jpg",
+          "assets/img/gallery/fauna/burung-cendrawasih-1.jpg",
+          "assets/img/gallery/fauna/burung-cendrawasih-3.jpg",
+        ],
+        latin_name: "Bird Of Paradise",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "qkm8y7GpX3A",
+        description: `
+        <p>
+          Burung Cenderawasih sebagian besar adalah pemakan serangga, meskipun beberapa spesies juga memakan nektar dan buah-buahan kecil. Mereka tinggal di hutan-hutan lebat dan memiliki habitat yang beragam, termasuk hutan dataran rendah, hutan pegunungan, dan hutan rawa-rawa.
+        </p>
+        <p>
+          Beberapa spesies burung Cenderawasih yang terkenal antara lain Burung Cenderawasih Rajawali (Greater Bird of Paradise), Burung Cenderawasih Paruh Kipas (Raggiana Bird of Paradise), dan Burung Cenderawasih Red Bird of Paradise.
+        </p>
+        <p>
+          Burung Cenderawasih dilindungi oleh undang-undang dan peraturan di negara-negara tempat mereka hidup. Namun, mereka masih menghadapi ancaman dari perburuan ilegal dan hilangnya habitat akibat deforestasi. Upaya konservasi dan pelestarian dilakukan untuk melindungi burung Cenderawasih dan memastikan kelangsungan hidup mereka di alam liar.
+        </p>
+        `
+      },
+      {
+        name: "Harimau Sumatera",
+        img: [
+          "assets/img/gallery/fauna/harimau-sumatra-1.jpg",
+          "assets/img/gallery/fauna/harimau-sumatra-2.jpg",
+          "assets/img/gallery/fauna/harimau-sumatra-3.jpg",
+        ],
+        latin_name: "Panthera tigris sumatrae",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "ijb7KNn7bdQ",
+        description: `
+        <p>
+          Buaya muara, atau dalam bahasa Inggris disebut sebagai saltwater crocodile, adalah salah satu spesies buaya terbesar yang ada di dunia. Nama ilmiahnya adalah Crocodylus porosus. Buaya muara ditemukan di wilayah yang luas di Asia Tenggara, termasuk di Indonesia, Australia, India, dan beberapa negara lainnya yang memiliki habitat perairan pesisir.
+        </p>
+        <p>
+          Harimau Sumatera memiliki ukuran tubuh yang lebih kecil dibandingkan dengan beberapa subspesies harimau lainnya. Panjang tubuh mereka antara 2 hingga 2,5 meter, dengan berat mencapai 100 hingga 140 kilogram. Harimau ini memiliki warna bulu yang cenderung lebih gelap dan garis-garis yang lebih rapat dibandingkan dengan harimau dari beberapa wilayah lain.
+        </p>
+        <p>
+          Habitat alami Harimau Sumatera meliputi hutan-hutan hujan tropis, hutan rawa, dan hutan dataran rendah di pulau Sumatera. Mereka merupakan predator puncak di ekosistem mereka dan memangsa berbagai hewan seperti rusa, babi hutan, kijang, dan babi liar.
+        </p>
+        <p>
+          Sayangnya, populasi Harimau Sumatera terus menurun akibat hilangnya habitat karena deforestasi dan perambahan hutan, perburuan ilegal, dan konflik dengan manusia. Gangguan terhadap habitat alami mereka telah menyebabkan perubahan dalam distribusi dan perilaku harimau ini.
+        </p>    
+        <p>
+          Harimau Sumatera dilindungi oleh hukum dan menjadi fokus upaya konservasi. Beberapa upaya konservasi termasuk pendirian taman nasional dan kawasan lindung, patroli dan pengawasan untuk mengurangi perburuan ilegal, serta pendidikan dan kesadaran masyarakat tentang pentingnya melindungi spesies ini dan habitatnya.
+        </p>
+        <p>
+          hayati di Indonesia dan memastikan kelangsungan hidup spesies ini untuk generasi mendatang.
+        </p>
+        `
+      },
+      {
+        name: "Buaya Muara",
+        img: [
+          "assets/img/gallery/fauna/buaya-muara-1.jpg",
+          "assets/img/gallery/fauna/buaya-muara-2.jpg",
+          "assets/img/gallery/fauna/buaya-muara-3.jpg",
+        ],
+        latin_name: "Saltwater Crocodile",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "Px3J8FzIB7w",
+        description: `
+        <p>
+          Buaya muara, atau dalam bahasa Inggris disebut sebagai saltwater crocodile, adalah salah satu spesies buaya terbesar yang ada di dunia. Nama ilmiahnya adalah Crocodylus porosus. Buaya muara ditemukan di wilayah yang luas di Asia Tenggara, termasuk di Indonesia, Australia, India, dan beberapa negara lainnya yang memiliki habitat perairan pesisir.
+        </p>
+        <p>
+          Buaya muara memiliki ciri khas tubuh yang besar dan kuat, dengan panjang mencapai 4-7 meter, meskipun beberapa individu dapat tumbuh hingga lebih dari 7 meter. Mereka memiliki tubuh yang ramping, kulit bersisik yang kasar, dan ciri khas yang membedakannya adalah hidung yang memanjang.
+        </p>
+        <p>
+          Buaya muara adalah hewan karnivora dan merupakan predator puncak di ekosistem mereka. Mereka memangsa berbagai jenis mangsa, termasuk ikan, burung, mamalia kecil, dan kadang-kadang juga memangsa hewan yang lebih besar seperti rusa dan kerbau. Buaya muara menggunakan strategi penyerangan yang tersembunyi, dengan menyergap mangsanya dari dalam air dan menyeret mereka ke dalam air untuk dimakan.
+        </p>
+        <p>
+          Habitat utama buaya muara adalah perairan pesisir seperti muara, sungai, dan rawa-rawa berair asin atau payau. Mereka dapat ditemukan baik di perairan tawar maupun asin, termasuk estuari, pantai berair, dan selat sempit di dekat pesisir.
+        </p>    
+        <p>
+          Buaya muara merupakan spesies yang dilindungi dan menjadi perhatian konservasi di banyak negara. Hilangnya habitat, perburuan ilegal, dan konflik manusia-buaya menjadi ancaman bagi populasi mereka. Beberapa upaya konservasi meliputi pendirian taman nasional dan kawasan lindung, serta pemantauan dan pengaturan penangkapan dan perdagangan buaya muara.
+        </p>
+        <p>
+          Interaksi manusia-buaya muara perlu dikelola dengan hati-hati untuk mencegah konflik dan memastikan keberlanjutan spesies ini. Penting untuk memahami perilaku dan habitat buaya muara serta mengadopsi langkah-langkah keamanan saat berada di wilayah mereka.
+        </p>
+        `
+      },
+      {
+        name: "Burung Jalak Bali",
+        img: [
+          "assets/img/gallery/fauna/burung-jalak-bali-1.jpg",
+          "assets/img/gallery/fauna/burung-jalak-bali-2.jpg",
+          "assets/img/gallery/fauna/burung-jalak-bali-3.jpg",
+        ],
+        latin_name: "Leucopsar Rothschildi",
+        status: "Langka",
+        origin: "Indonesia",
+        video_id: "uJSM5wu-NFc",
+        description: `
+        <p>
+          Burung Jalak Bali, atau dalam bahasa ilmiah disebut Leucopsar rothschildi, adalah jenis burung yang endemik di pulau Bali, Indonesia. Jalak Bali merupakan salah satu burung langka dan terancam punah.
+        </p>
+        <p> 
+          Burung Jalak Bali memiliki penampilan yang mencolok dengan bulu putih yang bersinar dan sayap hitam. Mereka memiliki paruh yang kuat dan ciri khas adalah adanya jambul kecil di bagian belakang kepala. Jalak Bali memiliki ukuran tubuh sedang, dengan panjang sekitar 25-28 cm.
+        </p>
+        <p>
+          Mereka adalah burung yang cerdas dan memiliki kemampuan vokal yang baik. Jalak Bali mampu meniru berbagai suara, termasuk suara manusia, dan mereka sering kali digemari sebagai burung peliharaan karena kemampuan ini.
+        </p>
+        <p>
+          Habitat asli Jalak Bali adalah hutan dan hutan mangrove di pulau Bali. Mereka sering ditemukan dalam kelompok kecil atau keluarga yang terdiri dari beberapa pasangan yang hidup bersama-sama.
+        </p>    
+        <p>
+          Sayangnya, populasi Jalak Bali terancam punah akibat hilangnya habitat, perdagangan ilegal, dan penangkapan untuk perdagangan burung liar. Pada tahun 2001, Jalak Bali dianggap punah di alam liar, tetapi melalui upaya konservasi yang intensif, populasi liar mereka telah berhasil direstorasi.
+        </p>
+        <p>
+          Program konservasi yang dilakukan termasuk upaya penangkaran dan pemulihan habitat, serta pemantauan dan perlindungan terhadap populasi liar Jalak Bali. Jalak Bali sekarang dianggap sebagai simbol pelestarian alam dan keanekaragaman hayati di Bali.
+        </p>
+        <p>  
+          Upaya untuk melindungi Jalak Bali terus dilakukan untuk memastikan kelangsungan hidup mereka. Pendidikan dan kesadaran masyarakat juga penting dalam menjaga keberlanjutan dan kelestarian Jalak Bali serta habitat mereka di pulau Bali.
+        </p>
+        `
+      },
+    ];
+
+    var galleryItemsContainer = document.getElementById("galleryItemsFauna");
+
+    for (var i = 0; i < listDataFauna.length; i++) {
+      var data = listDataFauna[i];
+
+      var colDiv = document.createElement("div");
+      colDiv.className = "col-xl-3 col-lg-4 col-md-6";
+
+      var galleryItemDiv = document.createElement("div");
+      galleryItemDiv.className = "gallery-item h-100";
+
+      var imgElement = document.createElement("img");
+      imgElement.className = "img-fluid";
+      imgElement.alt = "";
+      imgElement.src = data["img"][0];
+      var jsonString = JSON.stringify(data);
+
+      var galleryLinksDiv = document.createElement("div");
+      galleryLinksDiv.className =
+        "gallery-links d-flex align-items-center justify-content-center";
+
+      var previewLinkA = document.createElement("a");
+      previewLinkA.href = data["img"][0];
+      previewLinkA.title = data["name"];
+      previewLinkA.className = "glightbox preview-link";
+      previewLinkA.innerHTML = '<i class="bi bi-arrows-angle-expand"></i>';
+
+      var detailsLinkA = document.createElement("a");
+      detailsLinkA.href =
+        "gallery-single.html?data=" + encodeURIComponent(jsonString);
+      detailsLinkA.className = "details-link";
+      detailsLinkA.innerHTML = '<i class="bi bi-link-45deg"></i>';
+
+      galleryLinksDiv.appendChild(previewLinkA);
+      galleryLinksDiv.appendChild(detailsLinkA);
+
+      galleryItemDiv.appendChild(imgElement);
+      galleryItemDiv.appendChild(galleryLinksDiv);
+
+      colDiv.appendChild(galleryItemDiv);
+
+      galleryItemsContainer.appendChild(colDiv);
+    }
+
+  </script>
+
+</body>
+
+</html>
